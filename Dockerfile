@@ -17,6 +17,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
+# Check if model exists (optional - for debugging)
+RUN if [ -f models/document_classifier.pkl ]; then \
+        echo "✓ ML model found"; \
+    else \
+        echo "⚠ ML model not found - will use rule-based fallback"; \
+    fi
+
+
 # Expose port
 EXPOSE 5000
 
