@@ -1,28 +1,21 @@
-# Virtual environment
-venv/
 .venv/
-env/
-.env
-
-# Python cache
+venv/
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# IDE
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.env
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
 *.log
-
-# Test files
+.DS_Store
 test_images/
-uploads/
+*.jpg
+*.png
+*.pdf
